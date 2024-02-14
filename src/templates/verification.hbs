@@ -1,0 +1,752 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0,"
+    />
+    <title>Unisearch</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+    </style>
+    <style type="text/css">
+      html {
+        width: 100%;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+      }
+      img {
+        display: block !important;
+        border: 0;
+        -ms-interpolation-mode: bicubic;
+      }
+
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+
+      .MsoNormal {
+        font-family: "Open Sans", Arial, Helvetica Neue, Helvetica, sans-serif !important;
+      }
+      /* p,
+      div {
+        margin: 0 !important;
+        padding: 0 !important;
+      } */
+
+      .images {
+        display: block !important;
+        width: 100% !important;
+      }
+      .display-button td,
+      .display-button a {
+        font-family: "Open Sans", Arial, Helvetica Neue, Helvetica, sans-serif !important;
+      }
+
+      .display-button a:hover {
+        text-decoration: none !important;
+      }
+
+      /* MEDIA QUIRES */
+      @media only screen and (min-width: 799px) {
+        .main-width {
+          width: 600px;
+        }
+        .width800 {
+          width: 800px !important;
+          max-width: 800px !important;
+        }
+        .saf-table {
+          display: table !important;
+        }
+      }
+      @media only screen and (max-width: 799px) {
+        body {
+          width: auto !important;
+        }
+        .display-width {
+          width: 100% !important;
+        }
+        .display-width-inner {
+          width: 600px !important;
+        }
+        .padding {
+          padding: 0 20px !important;
+        }
+        .width800 {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+      }
+
+      @media only screen and (max-width: 639px) {
+        body {
+          width: auto !important;
+        }
+        .display-width {
+          width: 100% !important;
+        }
+        .display-width-inner,
+        .display-width-child {
+          width: 100% !important;
+        }
+        .display-width-child .button-width .display-button {
+          width: auto !important;
+        }
+        .padding {
+          padding: 0 20px !important;
+        }
+        .width282 {
+          width: 282px !important;
+        }
+        span.unsub-width {
+          width: 100% !important;
+          display: block !important;
+        }
+        span.txt-copyright {
+          padding-bottom: 10px !important;
+        }
+        .div-width {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .width-auto {
+          width: 100% !important;
+        }
+        .res-center {
+          display: table !important;
+          margin: 0 auto !important;
+        }
+        .height10 {
+          height: 10px !important;
+          line-height: 10px !important;
+        }
+        .height20 {
+          height: 20px !important;
+          line-height: 20px !important;
+        }
+        .height30 {
+          height: 30px !important;
+          line-height: 30px !important;
+        }
+        .hide-height,
+        .hide-bar {
+          display: none !important;
+        }
+        .txt-center {
+          text-align: center !important;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .display-width table {
+          width: 100% !important;
+        }
+        .display-width .button-width .display-button {
+          width: auto !important;
+        }
+        .display-width .width282 {
+          width: 282px !important;
+        }
+        .div-width {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .width-auto {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+      }
+
+      @media only screen and (max-width: 380px) {
+        .display-width table {
+          width: 100% !important;
+        }
+        .display-width .button-width .display-button {
+          width: auto !important;
+        }
+        .display-width-child .width282 {
+          width: 100% !important;
+        }
+        .width-auto {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+      }
+    </style>
+
+    
+    <style type="text/css" id="mc-style">
+      /********* BG COLORS *********/
+      /** 
+ 		*@tab Main BG Color 
+ 		*@tip Main BG Color 
+ 		*/
+      .mcbc-main {
+        /* @editable */
+        background-color: #f0f2f5 !important;
+      }
+
+      /** 
+ 		*@tab Section - View Browser BG Color 
+ 		*@tip Section - View Browser BG Color 
+ 		*/
+      .mcbc-sec-view-browser {
+        /* @editable */
+        background-color: #f6f6f6 !important;
+      }
+
+      /** 
+ 		*@tab Section - Menu BG Color 
+ 		*@tip Section - Menu BG Color 
+ 		*/
+      .mcbc-sec-menu {
+        /* @editable */
+        background-color: #ffffff !important;
+      }
+
+      /** 
+ 		*@tab Section - Header Optional BG Color 
+ 		*@tip Section - Header Optional BG Color 
+ 		*/
+      .mcbc-sec-header-optional {
+        /* @editable */
+        background-color: #fff !important;
+      }
+
+      /** 
+ 		*@tab Section 1 BG Color 
+ 		*@tip Section 1 BG Color 
+ 		*/
+      .mcbc-sec-section-1 {
+        /* @editable */
+        background-color: #ffffff !important;
+      }
+
+      /** 
+ 		*@tab Section 2 BG Color 
+ 		*@tip Section 2 BG Color 
+ 		*/
+      .mcbc-sec-section-2 {
+        /* @editable */
+        background-color: #f6f6f6 !important;
+      }
+
+      /** 
+ 		*@tab Section - Counter Optional BG Color 
+ 		*@tip Section - Counter Optional BG Color 
+ 		*/
+      .mcbc-sec-counter-optional {
+        /* @editable */
+        background-color: #dddddd !important;
+      }
+
+      /** 
+ 		*@tab Section - Testimonial Optional BG Color 
+ 		*@tip Section - Testimonial Optional BG Color 
+ 		*/
+      .mcbc-sec-testimonial-optional {
+        /* @editable */
+        background-color: #000000 !important;
+      }
+
+      /** 
+ 		*@tab Section - Cta Optional BG Color 
+ 		*@tip Section - Cta Optional BG Color 
+ 		*/
+      .mcbc-sec-cta-optional {
+        /* @editable */
+        background-color: #dddddd !important;
+      }
+
+      /** 
+ 		*@tab Section - Footer BG Color 
+ 		*@tip Section - Footer BG Color 
+ 		*/
+      .mcbc-sec-footer {
+        /* @editable */
+        background-color: #ffffff !important;
+      }
+
+      /** 
+ 		*@tab Price Content BG Color 
+ 		*@tip Price Content BG Color 
+ 		*/
+      .mcbc-cht-price-content {
+        /* @editable */
+        background-color: #ffffff !important;
+      }
+
+      /** 
+ 		*@tab Pricing Heading BG Color 
+ 		*@tip Pricing Heading BG Color 
+ 		*/
+      .mcbc-chtd-pricing-heading {
+        /* @editable */
+        background-color: #333333 !important;
+      }
+
+      /********* BUTTON BG COLORS *********/
+      /** 
+ 		*@tab Common Button BG Color 
+ 		*@tip Common Button BG Color 
+ 		*/
+      .mcbc-btn-common-button {
+        /* @editable */
+        background-color: #333333 !important; /* @editable */
+        border-radius: 0 !important;
+      }
+
+      /** 
+ 		*@tab Pricing Button BG Color 
+ 		*@tip Pricing Button BG Color 
+ 		*/
+      .mcbc-btn-pricing-button {
+        /* @editable */
+        background-color: #333333 !important; /* @editable */
+        border-radius: 0 !important;
+      }
+
+    
+      /********* BORDER COLORS *********/
+      /** 
+ 		*@tab Price List Border 
+ 		*@tip Price List Border 
+ 		*/
+      .mcbr-price-list-border-b {
+        /* @editable */
+        border-bottom: 1px solid #cccccc !important;
+      }
+
+      /** 
+ 		*@tab Cta Button Border 
+ 		*@tip Cta Button Border 
+ 		*/
+      .mcbr-cta-button-f {
+        /* @editable */
+        border: 1px solid #333333 !important;
+      }
+
+      /** 
+ 		*@tab Footer Border 
+ 		*@tip Footer Border 
+ 		*/
+      .mcbr-footer-border-b {
+        /* @editable */
+        border-bottom: 1px solid #cccccc !important;
+      }
+    </style>
+  </head>
+  <body style="width: 100%; margin: 0; mso-line-height-rule: exactly">
+
+    <!-- Logo section start-->
+    <table
+      align="center"
+      bgcolor="#f0f2f5"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      mc:repeatable="menu"
+      class=""
+    >
+      <tbody>
+        <tr>
+          <td align="center">
+            <div
+              style="
+                display: inline-block;
+                width: 100%;
+                max-width: 800px;
+                vertical-align: top;
+              "
+              class="width800"
+            >
+              <!-- ID:BG MENU -->
+              <table
+                align="center"
+                bgcolor="#f0f2f5"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                class="display-width"
+                width="100%"
+                style="max-width: 800px"
+              >
+                <tbody>
+                  <tr>
+                    <td align="center" class="padding">
+                      <div
+                        style="
+                          display: inline-block;
+                          width: 100%;
+                          max-width: 600px;
+                          vertical-align: top;
+                        "
+                        class="main-width"
+                      >
+                        <table
+                          align="center"
+                          border="0"
+                          class="display-width-inner"
+                          cellpadding="0"
+                          cellspacing="0"
+                          width="100%"
+                          style="max-width: 600px"
+                        >
+                          <tr>
+                            <td
+                              height="40"
+                              style="
+                                mso-line-height-rule: exactly;
+                                line-height: 15px;
+                                font-size: 0;
+                              "
+                            >
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              align="center"
+                              style="width: 100%; max-width: 100%; font-size: 0"
+                            >
+                              <div
+                                style="
+                                  display: inline-block;
+                                  max-width: 100%;
+                                  width: 100%;
+                                  vertical-align: top;
+                                "
+                                class="div-width"
+                              >
+                                <!--TABLE LEFT-->
+                                <table
+                                  align="center"
+                                  border="0"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  class="display-width-child"
+                                  width="100%"
+                                  style="
+                                    border-collapse: collapse;
+                                    mso-table-lspace: 0pt;
+                                    mso-table-rspace: 0pt;
+                                    width: 100%;
+                                    max-width: 100%;
+                                  "
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <table
+                                        align="center"
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        style="width: auto !important"
+                                      >
+                                        <tr>
+                                          <!-- ID:TXT MENU -->
+                                          <td
+                                            align="center"
+                                            style="color: #333333"
+                                          >
+                                            <a
+                                              href="#"
+                                              style="
+                                                color: #333333;
+                                                text-decoration: none;
+                                                text-align: center;
+                                              "
+                                            >
+                                              <img
+                                                src='{{{imgSrc}}}'
+                                                alt=""
+                                                width="100%"
+                                                height="100%"
+                                                style="
+                                                  margin: 0;
+                                                  border: 0;
+                                                  padding: 0;
+                                                  display: block;
+                                                "
+                                                mc:edit="Image-0"
+                                            /></a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              height="30"
+                              class="height30"
+                              style="
+                                mso-line-height-rule: exactly;
+                                line-height: 15px;
+                                font-size: 0;
+                              "
+                            >
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Logo section end -->
+
+    <!-- hero text -->
+    <table
+      align="center"
+      bgcolor="#fff"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      mc:repeatable="header"
+      class="mcbc-main"
+    >
+      <tr>
+        <td align="center">
+          <div
+            style="
+              display: inline-block;
+              font-family: Open Sans, sans-serif;
+              width: 100%;
+              max-width: 600px;
+              vertical-align: top;
+              background-color: #fff;
+            "
+            class=""
+          >
+            <table
+              align="center"
+              bgcolor="#fff"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              class=""
+              width="100%"
+              style="max-width: 600px; padding: 0 40px"
+            >
+            <tbody style="text-align: center">
+              <tr style="background-color: #ffffff">
+                <td style='padding: 40px 0 40px 0 !important;'>
+                  <center>
+                    <img src="{{CDN_LINK}}files/OTP%20Illustration%20(1)-1638619362278.png" alt="main"
+                    style="padding-bottom: 20px;" />
+                  </center>
+                  <p>Hi {{ name }},</p>
+          <p>Use this One Time Password (OTP) to verify your email with <a href="https://www.monitrix.com/"
+              style=" text-decoration: none;">monitrix.</a>.</p>
+              <p style="
+                    background-color: #f5f8fa;
+                    width: 145px;
+                    padding: 10px 20px;
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin: 0 auto;
+                    ">{{ code }}</p>
+              {{!-- <p style="color: #eeeeee; text-decoration: none;">
+                <a href={{verificationLink}}
+                  style=" text-decoration: none;">Click here to redirect to the verification screen.</a></p> --}}
+
+                <p>Your information is safe with monitrix.</p>
+          <p>Regards</p>
+          <p style="font-weight: 600; padding-top: 0;">The monitrix Team</p>
+        
+          </div>
+      </td>
+              </tr>
+              
+            </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+   
+<!-- footer -->
+  <table
+  align="center"
+  bgcolor="#fff"
+  border="0"
+  cellpadding="0"
+  cellspacing="0"
+  width="100%"
+  mc:repeatable="header"
+  class="mcbc-main"
+>
+  <tr>
+    <td align="center">
+      <div
+        style="
+          display: inline-block;
+          width: 100%;
+          max-width: 800px;
+          vertical-align: top;
+          background-color: #f0f2f5;
+        "
+        class=""
+      >
+        <table
+          align="center"
+          bgcolor="#f0f2f5"
+          border="0"
+          cellpadding="0"
+          cellspacing="0"
+          class=""
+          width="100%"
+          style="max-width: 600px"
+        >
+        <tr>
+          <td
+            height="10"
+            class="padding"
+            style="
+              font-size: 0;
+              mso-line-height-rule: exactly;
+              line-height: 5px;
+            "
+          >
+            &nbsp;
+          </td>
+        </tr>
+          <tr>
+            <td
+              align="left"
+              class="MsoNormal padding"
+              style="
+                color: #333;
+                font-family: Open Sans, sans-serif;
+                font-size: 14px;
+                line-height: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: center;
+                padding: 15px 0;
+              "
+              mc:edit="Content-19"
+            >
+            Address: Suite 98 Level 3, 515 Kent Street, Sydney, NSW 2000<br
+            />Email:
+            <a
+              href='mailto:info@monitrix.com?subject=Mail from Our Site'
+              style='text-decoration: none; color: inherit;'
+            >info@monitrix.com</a>
+            <br />
+
+            <a
+              href='tel:+9717814894'
+              style='text-decoration: none; color: inherit;'
+            >Mobile: +9717814894</a>
+            </td>
+          </tr>
+          <tr>
+            <td
+              height="5"
+              class="padding"
+              style="
+                font-size: 0;
+                mso-line-height-rule: exactly;
+                line-height: 5px;
+              "
+            >
+              &nbsp;
+            </td>
+          </tr>
+          <tr>
+            <!-- ID:TXT CONTENT -->
+            <td
+              align="center"
+              class="MsoNormal padding"
+              style="
+                color: #333;
+                font-family: Open Sans, sans-serif;
+                font-size: 14px;
+                line-height: 24px;
+              "
+              mc:edit="Content-19"
+            >
+            <a
+            target='_blank'
+            href='https://twitter.com/myunisearch'
+            style='padding: 5px; text-decoration: none;'
+          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+          <a
+            target='_blank'
+            href='https://www.facebook.com/UniSearchMalaysia'
+            style='padding: 5px; text-decoration: none;'
+          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a
+            target='_blank'
+            href='https://www.youtube.com/channel/UCCHQrxOr5olDBxypJUE7qZw'
+            style='padding: 5px; text-decoration: none;'
+          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a
+            target='_blank'
+            href='https://www.instagram.com/myunisearch/'
+            style='padding: 5px; text-decoration: none;'
+          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          </td>
+          </tr>
+          <tr>
+            <td
+              height="20"
+              class="padding"
+              style="
+                font-size: 0;
+                mso-line-height-rule: exactly;
+                line-height: 5px;
+              "
+            >
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>    
+  </body>
+</html>
